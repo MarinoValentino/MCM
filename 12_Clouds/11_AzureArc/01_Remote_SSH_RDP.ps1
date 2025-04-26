@@ -1,3 +1,7 @@
+## Arc Onboard Server
+# https://aka.ms/AzureConnectedMachineAgent
+azcmagent connect -s 7fe8a55f-a687-4894-817a-9792e2815909 -g p-rg-AzureArc -l switzerlandnorth
+
 ## Remote Desktop Connection (RDP) to Azure Arc-enabled Windows Server machines anywhere
 ## https://www.thomasmaurer.ch/2024/09/remote-desktop-connection-rdp-to-azure-arc-enabled-windows-server-machines-anywhere/
 
@@ -44,4 +48,4 @@ az connectedmachine extension create --machine-name VM-RDS-RRAS --resource-group
 
 ### Connect with:
 az login
-az ssh arc --resource-group p-rg-AzureArc --vm-name VM-RDS-RRAS --local-user rds\administrator --rdp
+az ssh arc --resource-group p-rg-AzureArc --vm-name VM-RDS-SRV2025 --local-user rds\administrator --rdp
